@@ -120,7 +120,7 @@ Our depth estimation results on the KITTI dataset in `192 x 640` as follows:
 |     Method     | $Abs\space Rel\downarrow$ | $Sq\space Rel\downarrow$ | $RMSE\downarrow$ | $RMSE\space log\downarrow$ | $\delta <1.25\uparrow$ | $\delta < 1.25^2\uparrow$ | $\delta < 1.25^3\uparrow$ |
 | :------------: | :-----------------------: | :----------------------: | :--------------: | :------------------------: | :--------------------: | :-----------------------: | :-----------------------: |
 |   MViTDepth    |           0.106           |          0.766           |      4.507       |           0.180            |         0.891          |           0.964           |           0.983           |
-| MViTDepth smll |           0.107           |          0.788           |      4.579       |           0.183            |         0.887          |           0.962           |           0.983           |
+| MViTDepth small |           0.107           |          0.788           |      4.579       |           0.183            |         0.887          |           0.962           |           0.983           |
 | MViTDepth tiny |           0.111           |          0.825           |      4.731       |           0.187            |         0.881          |           0.961           |           0.983           |
 
 
@@ -130,7 +130,7 @@ Our depth estimation results on the KITTI dataset in `320 x 1024` as follows:
 |    $Method$    | $Abs\space Rel\downarrow $ | $Sq\space Rel\downarrow $ | $RMSE\downarrow $ | $RMSE\space log\downarrow $ | $\delta <1.25\uparrow $ | $\delta < 1.25^2\uparrow $ | $\delta < 1.25^3\uparrow $ |
 | :------------: | :------------------------: | :-----------------------: | :---------------: | :-------------------------: | :---------------------: | :------------------------: | :------------------------: |
 |   MViTDepth    |           0.102            |           0.756           |       4.415       |            0.177            |          0.899          |           0.966            |           0.984            |
-| MViTDepth smll |           0.104            |           0.772           |       4.460       |            0.180            |          0.893          |           0.965            |           0.984            |
+| MViTDepth small |           0.104            |           0.772           |       4.460       |            0.180            |          0.893          |           0.965            |           0.984            |
 | MViTDepth tiny |           0.109            |           0.818           |       4.603       |            0.184            |          0.887          |           0.963            |           0.983            |
 
 
@@ -140,13 +140,13 @@ We also provide models in different sizes to accommodate various edge devices
 |    $Method$    | $decoder\space channel$ | $Abs\space Rel\downarrow $ | $Sq\space Rel\downarrow $ | $RMSE\downarrow $ | $RMSE\space log\downarrow $ | $\delta <1.25\uparrow $ | $\delta < 1.25^2\uparrow $ | $\delta < 1.25^3\uparrow $ |
 | :------------: | :---------------------: | :------------------------: | :-----------------------: | :---------------: | :-------------------------: | :---------------------: | :------------------------: | :------------------------: |
 |   MViTDepth    |            2            |           0.105            |           0.753           |       4.474       |            0.180            |          0.892          |           0.965            |           0.984            |
-| MViTDepth smll |            2            |           0.106            |           0.785           |       4.555       |            0.182            |          0.889          |           0.963            |           0.983            |
+| MViTDepth small |            2            |           0.106            |           0.785           |       4.555       |            0.182            |          0.889          |           0.963            |           0.983            |
 | MViTDepth tiny |            2            |           0.110            |           0.829           |       4.675       |            0.187            |          0.884          |           0.962            |           0.982            |
 |   MViTDepth    |            1            |           0.106            |           0.766           |       4.507       |            0.180            |          0.891          |           0.964            |           0.983            |
-| MViTDepth smll |            1            |           0.107            |           0.788           |       4.579       |            0.183            |          0.887          |           0.962            |           0.983            |
+| MViTDepth small |            1            |           0.107            |           0.788           |       4.579       |            0.183            |          0.887          |           0.962            |           0.983            |
 | MViTDepth tiny |            1            |           0.111            |           0.825           |       4.731       |            0.187            |          0.881          |           0.961            |           0.983            |
 |   MViTDepth    |           0.5           |           0.106            |           0.736           |       4.523       |            0.180            |          0.888          |           0.963            |           0.984            |
-| MViTDepth smll |           0.5           |           0.108            |           0.755           |       4.604       |            0.182            |          0.883          |           0.962            |           0.984            |
+| MViTDepth small |           0.5           |           0.108            |           0.755           |       4.604       |            0.182            |          0.883          |           0.962            |           0.984            |
 | MViTDepth tiny |           0.5           |           0.114            |           0.862           |       4.789       |            0.189            |          0.874          |           0.959            |           0.983            |
 
 
@@ -156,13 +156,13 @@ Our various models complexit as follow:
 |    $Method$    | $decoder\space channel$ | $Parameters$ | $GFLOPs$ |
 | :------------: | :---------------------: | :----------: | :------: |
 |   MViTDepth    |            2            |     8.1M     |   6.7    |
-| MViTDepth smll |            2            |     4.3M     |   4.7    |
+| MViTDepth small |            2            |     4.3M     |   4.7    |
 | MViTDepth tiny |            2            |     3.1M     |   3.2    |
 |   MViTDepth    |            1            |     6.3M     |   4.7    |
-| MViTDepth smll |            1            |     2.8M     |   2.8    |
+| MViTDepth small |            1            |     2.8M     |   2.8    |
 | MViTDepth tiny |            1            |     1.8M     |   1.5    |
 |   MViTDepth    |           0.5           |     5.5M     |   4.0    |
-| MViTDepth smll |           0.5           |     2.3M     |   2.2    |
+| MViTDepth small |           0.5           |     2.3M     |   2.2    |
 | MViTDepth tiny |           0.5           |     1.3M     |   0.9    |
 
 
