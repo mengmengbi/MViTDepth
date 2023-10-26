@@ -74,7 +74,7 @@ The decoder_channel_scale means
 | :-------------------: | :-----------------------------: |
 |          200          |     {16, 32, 64, 128, 256}      |
 |          100          |      {8, 16, 32, 64, 128}       |
-|          300          |       {4, 8, 16, 32, 64}        |
+|          50          |       {4, 8, 16, 32, 64}        |
 
 The encoder_mobilevit means the backbone network of MobileViTv1
 
