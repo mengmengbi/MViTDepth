@@ -7,7 +7,7 @@ def get_monovit_pretrained(load_type):
     # 加载方式也不同，在1024分年率的时候Monovit的作者只提供了一个权重文件
     if load_type == 1024:
         depth_dict = torch.load(r"F:\rd\mobilevit_distilla_pose_nofreeze_light_decoder\models\1024_320\depth.pth")
-        new_dict = depth_dict
+        # new_dict = depth_dict
         new_dict = {}
         for k, v in depth_dict.items():
             name = k[7:]
