@@ -12,7 +12,7 @@ def get_monovit_pretrained(load_type):
         for k, v in depth_dict.items():
             name = k[7:]
             new_dict[name] = v
-            depth.load_state_dict({k: v for k, v in new_dict.items() if k in depth.state_dict()})
+        depth.load_state_dict({k: v for k, v in new_dict.items() if k in depth.state_dict()})
 
     if load_type == 640:
         # 加载编码器的权重
