@@ -56,7 +56,7 @@ class Trainer:
             self.opt.frame_ids.append("s")
 
         # load pre-trained MonoViT (teacher network),the load_type present resolution
-        self.monovit = get_monovit_pretrained(load_type=640)
+        self.monovit = get_monovit_pretrained(640)
         self.monovit.cuda(1)
         self.monovit.eval()
 
